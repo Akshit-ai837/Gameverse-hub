@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact | GameVerse Hub</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <script src="js/script.js" defer></script>
+</head>
+<body>
+ <!-- 🧭 HEADER -->
+<header class="site-header">
+  <div class="container">
+    <a href="index.html" class="logo">
+      <img src="images/logo.jpg" alt="GameVerse Hub Logo" class="logo-img">
+      GameVerse Hub
+    </a>
+
+    <nav class="main-nav">
+      <a href="index.html">Home</a>
+      <a href="minecraft.html">Minecraft</a>
+      <a href="amongus.html">Among Us</a>
+      <a href="deadbydaylight.html">Dead by Daylight</a>
+      <a href="fallguys.html">Fall Guys</a>
+      <a href="minimilitia.html">Mini Militia</a>
+      <a href="mini-game.html">Mini Game</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+
+    <div class="menu-icon">
+      <span></span><span></span><span></span>
+    </div>
+  </div>
+</header>
+
+
+
+  <main class="contact-page">
+    <section class="contact-intro">
+      <h1>📬 Get in Touch</h1>
+      <p>
+        Have feedback, questions, or suggestions?  
+        We’d love to hear from you! Drop us a message below.
+      </p>
+    </section>
+
+    <section class="contact-form-section">
+      <form id="contactForm" class="contact-form">
+        <div class="form-group">
+          <label for="name">Full Name</label>
+          <input type="text" id="name" name="name" placeholder="Enter your name" required />
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email Address</label>
+          <input type="email" id="email" name="email" placeholder="Enter your email" required />
+        </div>
+
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" placeholder="Type your message..." required></textarea>
+        </div>
+
+        <button type="submit" class="btn">Send Message</button>
+      </form>
+
+      <p id="formStatus" class="form-status"></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 GameVerse Hub — Contact Page</p>
+  </footer>
+</body>
+</html>

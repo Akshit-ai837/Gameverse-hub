@@ -1,0 +1,846 @@
+/* Among Us – How to Play */
+.how-to-play {
+  padding: 2rem 1rem;
+  background: #220022;
+  color: #fff;
+}
+.how-to-play .play-steps {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  justify-content: center;
+}
+.how-to-play .step {
+  flex: 1 1 200px;
+  background: #330033;
+  padding: 1rem;
+  border-radius: 8px;
+}
+.how-to-play .step h3 { margin-bottom: 0.5rem; color: #ff4081; }
+
+/* Objectives / Goals */
+.objectives {
+  padding: 2rem 1rem;
+  background: #1a001a;
+  color: #ffeb3b;
+}
+.objectives .goals {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+}
+.objectives .goal {
+  flex: 1 1 250px;
+  background: #330033;
+  padding: 1.5rem;
+  border-radius: 8px;
+}
+.objectives .goal h3 { margin-bottom: 1rem; }
+
+/* Among Us Features list */
+.amongus-features {
+  padding: 2rem 1rem;
+  background: #2b002b;
+}
+.amongus-features ul {
+  list-style: none;
+  padding: 0;
+  max-width: 600px;
+  margin: auto;
+}
+.amongus-features li {
+  padding: 0.5rem 0;
+  font-size: 1rem;
+  color: #ffc107;
+}
+
+/* Updates / Awards */
+.updates-awards {
+  padding: 2rem 1rem;
+  background: #1a001a;
+  color: #ffffff;
+}
+.updates-awards h2 { color: #ff80ab; }
+.updates-awards .updates, .updates-awards .awards {
+  margin: 1rem auto;
+  max-width: 600px;
+}
+.updates-awards ul {
+  list-style: disc;
+  padding-left: 20px;
+}
+
+/* 🎮 Minecraft Page Styles */
+.minecraft-hero {
+  background: linear-gradient(to bottom, #4caf50, #2e7d32);
+  color: #fff;
+  text-align: center;
+  padding: 3rem 1rem;
+}
+.minecraft-hero h1 {
+  font-size: 2rem;
+  text-shadow: 2px 2px 4px #1b5e20;
+}
+.minecraft-hero p {
+  max-width: 600px;
+  margin: 1rem auto;
+}
+.minecraft-hero .game-image {
+  max-width: 350px;
+  border-radius: 10px;
+  margin: 1rem auto;
+  display: block;
+  box-shadow: 0 0 15px rgba(0, 100, 0, 0.5);
+  transition: transform 0.3s;
+}
+.minecraft-hero .game-image:hover {
+  transform: scale(1.05);
+}
+
+/* Gameplay Overview */
+.gameplay-overview {
+  padding: 2rem 1rem;
+  background: #f1f8e9;
+  color: #2e7d32;
+  border-top: 4px solid #81c784;
+  border-bottom: 4px solid #81c784;
+}
+
+/* Game Modes */
+.game-modes {
+  background: #e8f5e9;
+  padding: 2rem 1rem;
+}
+.modes-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+}
+.mode {
+  background: #a5d6a7;
+  color: #1b5e20;
+  padding: 1rem;
+  border-radius: 8px;
+  flex: 1 1 250px;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  transition: transform 0.3s ease;
+}
+.mode:hover {
+  transform: translateY(-5px);
+}
+
+/* Features */
+.minecraft-features {
+  background: #c8e6c9;
+  padding: 2rem 1rem;
+  color: #1b5e20;
+}
+.minecraft-features ul {
+  list-style: square;
+  max-width: 600px;
+  margin: 0 auto;
+  padding-left: 20px;
+}
+
+/* Updates & Community */
+.updates-community {
+  padding: 2rem 1rem;
+  background: #f1f8e9;
+  color: #33691e;
+  text-align: center;
+}
+.updates-community p {
+  max-width: 700px;
+  margin: 1rem auto;
+}
+
+/* 🩸 Dead by Daylight Page Styles */
+.dbd-hero {
+  background: radial-gradient(circle at center, #1a0000, #000);
+  color: #fff;
+  text-align: center;
+  padding: 3rem 1rem;
+  position: relative;
+}
+.dbd-hero h1 {
+  color: #ff3d00;
+  text-shadow: 2px 2px 6px #000;
+}
+.dbd-hero p {
+  max-width: 650px;
+  margin: 1rem auto;
+  line-height: 1.6;
+}
+.dbd-hero .game-image {
+  max-width: 350px;
+  border-radius: 10px;
+  margin: 1.5rem auto;
+  display: block;
+  box-shadow: 0 0 20px rgba(255, 0, 0, 0.6);
+  transition: transform 0.3s ease;
+}
+.dbd-hero .game-image:hover {
+  transform: scale(1.05);
+}
+
+/* Overview */
+.dbd-overview {
+  background: #121212;
+  color: #eee;
+  padding: 2rem 1rem;
+  border-left: 4px solid #ff3d00;
+  border-right: 4px solid #ff3d00;
+}
+
+/* Roles */
+.dbd-roles {
+  background: #0d0d0d;
+  padding: 2rem 1rem;
+  color: #fff;
+}
+.roles-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+}
+.role {
+  flex: 1 1 250px;
+  padding: 1.5rem;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0 2px 10px rgba(255, 0, 0, 0.3);
+  transition: transform 0.3s ease;
+}
+.role.killer {
+  background: linear-gradient(145deg, #3d0000, #1a0000);
+}
+.role.survivor {
+  background: linear-gradient(145deg, #003333, #001a1a);
+}
+.role:hover {
+  transform: scale(1.05);
+}
+
+/* Features */
+.dbd-features {
+  background: #1a0000;
+  padding: 2rem 1rem;
+  color: #ffebee;
+}
+.dbd-features ul {
+  list-style: none;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 0;
+}
+.dbd-features li {
+  padding: 0.5rem 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Updates */
+.dbd-updates {
+  background: #0d0d0d;
+  color: #f5f5f5;
+  text-align: center;
+  padding: 2rem 1rem;
+}
+.dbd-updates h2 {
+  color: #ff3d00;
+  margin-bottom: 1rem;
+}
+.dbd-updates p {
+  max-width: 700px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+/* 🎈 Fall Guys Page Styles */
+.fallguys-hero {
+  background: linear-gradient(to bottom right, #ff4081, #40c4ff, #fff176);
+  color: #fff;
+  text-align: center;
+  padding: 3rem 1rem;
+}
+.fallguys-hero h1 {
+  font-size: 2rem;
+  text-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+}
+.fallguys-hero p {
+  max-width: 600px;
+  margin: 1rem auto;
+}
+.fallguys-hero .game-image {
+  max-width: 350px;
+  border-radius: 15px;
+  margin: 1.5rem auto;
+  display: block;
+  box-shadow: 0 0 20px rgba(255,255,255,0.6);
+  transition: transform 0.3s ease;
+}
+.fallguys-hero .game-image:hover {
+  transform: scale(1.05);
+}
+
+/* Overview */
+.fallguys-overview {
+  background: #fce4ec;
+  color: #880e4f;
+  padding: 2rem 1rem;
+  border-left: 5px solid #f06292;
+  border-right: 5px solid #f06292;
+}
+
+/* Game Modes */
+.fallguys-modes {
+  background: #e1f5fe;
+  padding: 2rem 1rem;
+}
+.fallguys-modes .modes-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+}
+.fallguys-modes .mode {
+  background: #fff3e0;
+  color: #ff6f00;
+  padding: 1.5rem;
+  border-radius: 10px;
+  flex: 1 1 250px;
+  text-align: center;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+.fallguys-modes .mode:hover {
+  transform: translateY(-5px);
+}
+
+/* Features */
+.fallguys-features {
+  background: #fce4ec;
+  padding: 2rem 1rem;
+  color: #ad1457;
+}
+.fallguys-features ul {
+  list-style: square;
+  max-width: 600px;
+  margin: 0 auto;
+  padding-left: 20px;
+}
+
+/* Community & Updates */
+.fallguys-community {
+  background: #fffde7;
+  color: #f57f17;
+  padding: 2rem 1rem;
+  text-align: center;
+}
+.fallguys-community p {
+  max-width: 700px;
+  margin: 1rem auto;
+  line-height: 1.6;
+}
+
+/* 🧩 MINI GAME STYLES — GAMEVERSE HUB */
+
+.mini-game-page {
+  text-align: center;
+  padding: 2rem 1rem;
+  background: radial-gradient(circle at top, #1e1e2f, #000);
+  color: #fff;
+  min-height: 100vh;
+}
+
+.mini-game-intro h1 {
+  font-size: 2rem;
+  color: #00e5ff;
+  margin-bottom: 0.5rem;
+  text-shadow: 0 0 15px rgba(0, 229, 255, 0.6);
+}
+
+.mini-game-intro p {
+  margin-bottom: 1rem;
+  color: #ccc;
+  font-size: 1.1rem;
+}
+
+.btn {
+  background: #00e5ff;
+  color: #000;
+  padding: 0.6rem 1.2rem;
+  border-radius: 8px;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.btn:hover {
+  background: #00b8d4;
+  transform: scale(1.05);
+}
+
+.game-board {
+  display: grid;
+  grid-template-columns: repeat(4, 100px);
+  gap: 15px;
+  justify-content: center;
+  margin: 2rem auto;
+}
+
+/* 🎴 CARD STYLES */
+.card {
+  width: 100px;
+  height: 100px;
+  position: relative;
+  perspective: 1000px;
+  cursor: pointer;
+  border-radius: 12px;
+}
+
+.card .front,
+.card .back {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  border-radius: 12px;
+  backface-visibility: hidden;
+  transform-style: preserve-3d;
+  transition: transform 0.6s;
+}
+
+/* Front of card (hidden side) */
+.card .front {
+  background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+  border: 2px solid #fff;
+  transform: rotateY(0deg);
+}
+
+/* Back of card (colorful icons side) */
+.card .back {
+  background: linear-gradient(135deg, #a18cd1, #fbc2eb);
+  transform: rotateY(180deg);
+  font-size: 2.8rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  user-select: none;
+}
+
+
+/* Flip animation */
+.card.flip .front {
+  transform: rotateY(180deg);
+}
+
+.card.flip .back {
+  transform: rotateY(0deg);
+}
+
+/* Game status (Moves + Matches) */
+.game-status {
+  color: #00e5ff;
+  font-weight: bold;
+  font-size: 1.1rem;
+  text-shadow: 0 0 10px rgba(0, 229, 255, 0.5);
+  margin-top: 1rem;
+}
+
+/* ✨ Hover pulse effect */
+.card:hover {
+  transform: scale(1.05);
+  transition: transform 0.2s ease;
+}
+
+/* 🎯 Responsive Design */
+@media (max-width: 768px) {
+  .game-board {
+    grid-template-columns: repeat(3, 90px);
+    gap: 12px;
+  }
+  .card {
+    width: 90px;
+    height: 90px;
+  }
+  .card .back {
+    font-size: 2.2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .game-board {
+    grid-template-columns: repeat(2, 80px);
+    gap: 10px;
+  }
+  .card {
+    width: 80px;
+    height: 80px;
+  }
+  .card .back {
+    font-size: 1.9rem;
+  }
+}
+
+/* 💌 CONTACT PAGE STYLES */
+.contact-page {
+  background: radial-gradient(circle at top, #0d0d1a, #000);
+  color: #fff;
+  min-height: 100vh;
+  text-align: center;
+  padding: 2rem 1rem;
+}
+
+.contact-intro h1 {
+  font-size: 2rem;
+  color: #00e5ff;
+  margin-bottom: 0.5rem;
+  text-shadow: 0 0 10px rgba(0, 229, 255, 0.6);
+}
+
+.contact-intro p {
+  max-width: 600px;
+  margin: 0 auto 2rem;
+  color: #ccc;
+  line-height: 1.6;
+}
+
+.contact-form {
+  max-width: 600px;
+  margin: 0 auto;
+  background: rgba(255, 255, 255, 0.05);
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(0, 229, 255, 0.2);
+  text-align: left;
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+.form-group label {
+  display: block;
+  color: #00e5ff;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 0.8rem;
+  border: 1px solid #00e5ff;
+  border-radius: 8px;
+  background: #111;
+  color: #fff;
+  font-size: 1rem;
+  outline: none;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  border-color: #00bcd4;
+  box-shadow: 0 0 10px rgba(0, 229, 255, 0.3);
+}
+
+.form-status {
+  color: #00e5ff;
+  margin-top: 1.5rem;
+  font-weight: 500;
+  text-align: center;
+  min-height: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  .contact-form {
+    padding: 1.2rem;
+  }
+}
+
+/* 🌌 GLOBAL STYLE */
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  background-color: #000;
+  color: #fff;
+}
+
+/* 🧭 HEADER */
+.site-header {
+  width: 100%;
+  padding: 1rem 2rem;
+  background: rgba(0, 0, 0, 0.85);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  z-index: 10;
+  box-shadow: 0 0 15px rgba(0, 229, 255, 0.2);
+}
+
+.logo {
+  font-size: 1.4rem;
+  color: #00e5ff;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.main-nav a {
+  color: #ccc;
+  margin: 0 1rem;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.main-nav a.active,
+.main-nav a:hover {
+  color: #00e5ff;
+}
+
+/* 🌟 HERO SECTION */
+.hero {
+  background: url('../images/hero.jpg') center center / cover no-repeat;
+  min-height: calc(100vh - 80px); /* fills below header */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #fff;
+  position: relative;
+  margin-top: 0;
+  padding: 2rem;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6); /* overlay for text clarity */
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  max-width: 700px;
+}
+
+.hero-content h1 {
+  font-size: 3rem;
+  color: #00e5ff;
+  margin-bottom: 1rem;
+}
+
+.hero-content p {
+  font-size: 1.2rem;
+  color: #eee;
+  margin-bottom: 1.5rem;
+}
+
+
+/* ⭐ FEATURED GAMES */
+.featured {
+  text-align: center;
+  padding: 4rem 1rem;
+  background: radial-gradient(circle at top, #0d0d1a, #000);
+}
+
+.featured h2 {
+  font-size: 2rem;
+  color: #00e5ff;
+  margin-bottom: 2rem;
+  text-shadow: 0 0 15px rgba(0, 229, 255, 0.5);
+}
+
+.games-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  padding: 2rem;
+  justify-items: center;
+}
+
+.game-card {
+  background: #0a0a0a;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 0 20px rgba(0, 229, 255, 0.2);
+  transition: transform 0.3s, box-shadow 0.3s;
+  text-align: center;
+  width: 100%;
+  max-width: 300px;
+}
+
+.game-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+
+  display: block;
+}
+
+.game-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 25px rgba(0, 229, 255, 0.5);
+}
+
+.game-card h3 {
+  margin: 1rem 0 0.5rem;
+  color: #00e5ff;
+}
+
+.game-card p {
+  color: #ccc;
+  padding: 0 1rem 1.5rem;
+  font-size: 0.95rem;
+}
+
+
+.game-card h3 {
+  margin: 1rem 0 0.5rem;
+  color: #00e5ff;
+}
+
+.game-card p {
+  font-size: 0.95rem;
+  color: #ccc;
+  padding: 0 1rem 1rem;
+}
+
+.btn.small {
+  background: #00e5ff;
+  color: #000;
+  font-size: 0.9rem;
+  padding: 0.5rem 1rem;
+  display: inline-block;
+  margin: 0 0 1rem;
+}
+
+/* 🌐 FOOTER */
+footer {
+  text-align: center;
+  padding: 1rem 0;
+  background: #000;
+  color: #666;
+  font-size: 0.9rem;
+  border-top: 1px solid rgba(0, 229, 255, 0.2);
+}
+
+/* 📱 RESPONSIVE */
+@media (max-width: 768px) {
+  .hero-content h1 {
+    font-size: 2.2rem;
+  }
+  .main-nav {
+    display: none;
+  }
+}
+
+/* 🎮 INDIVIDUAL GAME PAGE */
+.game-hero {
+  position: relative;
+  height: 90vh;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #fff;
+}
+
+.game-hero .overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.game-hero-content {
+  position: relative;
+  z-index: 2;
+  max-width: 700px;
+  padding: 2rem;
+}
+
+.game-hero-content h1 {
+  font-size: 3rem;
+  color: #00e5ff;
+  text-shadow: 0 0 25px rgba(0, 229, 255, 0.7);
+}
+
+.game-info {
+  background: #0a0a0a;
+  padding: 4rem 2rem;
+  text-align: left;
+  color: #ccc;
+}
+
+.game-info h2, .game-info h3 {
+  color: #00e5ff;
+  margin-bottom: 1rem;
+}
+
+.game-info ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.game-info ul li {
+  margin: 0.5rem 0;
+  font-size: 1.1rem;
+}
+
+.games-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+  justify-items: center;
+}
+
+@media (max-width: 900px) {
+  .games-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.center-row {
+  display: flex;
+  justify-content: center; /* centers horizontally */
+  align-items: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+  padding: 2rem 0;
+  text-align: center;
+}
+
+/* 🎮 Logo Styling */
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+  color: #00e5ff;
+  font-weight: 700;
+  font-size: 1.4rem;
+}
+
+.logo-img {
+  width: 45px;
+  height: 45px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 229, 255, 0.5);
+  transition: transform 0.3s;
+}
+
+.logo-img:hover {
+  transform: scale(1.1);
+}

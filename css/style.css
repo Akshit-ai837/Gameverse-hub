@@ -1229,3 +1229,140 @@ main, .content, .game-section {
   background: #e000c0;
   transform: scale(1.05);
 }
+
+/* 🌐 AUTH PAGE (Login / Signup) */
+.auth-page {
+  min-height: 100vh;
+  padding: 120px 1rem 2rem;
+  background: radial-gradient(circle at top, #0d0d1a, #000);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.auth-box {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 2rem 2.5rem;
+  border-radius: 15px;
+  box-shadow: 0 0 25px rgba(0, 229, 255, 0.2);
+  text-align: center;
+  width: 100%;
+  max-width: 420px;
+}
+
+.auth-box h1 {
+  color: #00e5ff;
+  margin-bottom: 0.5rem;
+  font-size: 2rem;
+}
+
+.auth-sub {
+  color: #bbb;
+  margin-bottom: 1.5rem;
+}
+
+.auth-box form input {
+  width: 100%;
+  padding: 0.9rem;
+  margin-bottom: 1rem;
+  border-radius: 10px;
+  border: 1px solid #00e5ff;
+  background: #111;
+  color: #fff;
+  font-size: 1rem;
+  outline: none;
+}
+
+.auth-btn {
+  width: 100%;
+  padding: 0.8rem;
+  background: #00e5ff;
+  border: none;
+  border-radius: 10px;
+  font-weight: 700;
+  color: #000;
+  cursor: pointer;
+  font-size: 1.1rem;
+  transition: 0.3s;
+}
+
+.auth-btn:hover {
+  background: #00bcd4;
+  transform: scale(1.05);
+}
+
+.auth-switch {
+  color: #ccc;
+  margin-top: 1rem;
+}
+
+.auth-switch a {
+  color: #00e5ff;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.auth-switch a:hover {
+  text-decoration: underline;
+}
+
+/* PLACE NAV LINKS & AUTH BUTTONS LEFT + RIGHT */
+.main-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+/* LEFT SIDE LINKS */
+.links-left a {
+  margin: 0 1rem;
+}
+
+/* RIGHT SIDE (LOGIN + SIGNUP) */
+.auth-buttons {
+  display: flex;
+  align-items: center;
+}
+
+/* Auth button styling */
+.nav-auth {
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  font-weight: 600;
+  transition: 0.3s ease;
+  margin-left: 0.5rem;
+}
+
+/* LOGIN BUTTON */
+.login-btn {
+  border: 1px solid #00e5ff;
+  color: #00e5ff !important;
+}
+
+.login-btn:hover {
+  background: #00e5ff;
+  color: #000 !important;
+}
+
+/* SIGN UP BUTTON */
+.signup-btn {
+  background: #00e5ff;
+  color: #000 !important;
+}
+
+.signup-btn:hover {
+  background: #00bcd4;
+}
+
+/* LEFT SIDE LINKS */
+.links-left a {
+  margin: 0 1rem;
+}
+
+/* RIGHT SIDE AUTH BUTTONS */
+.auth-buttons {
+  margin-left: auto;     /* pushes them to the far right */
+  display: flex;
+  align-items: center;
+}

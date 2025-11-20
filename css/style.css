@@ -844,3 +844,388 @@ footer {
 .logo-img:hover {
   transform: scale(1.1);
 }
+
+/* --------------------------------------------------
+   VALORANT PAGE STYLING (MATCHES DBD THEME)
+-------------------------------------------------- */
+
+/* ✅ Valorant Agent Cards – Styled Like Mini-Game Cards */
+.agent {
+  width: 180px;
+  height: 220px;
+  position: relative;
+  perspective: 1000px;
+  cursor: pointer;
+  border-radius: 14px;
+  transition: transform 0.2s ease;
+}
+
+/* Card Inner Structure */
+.agent-inner {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  border-radius: 14px;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+}
+
+/* Flip Animation */
+.agent.flip .agent-inner {
+  transform: rotateY(180deg);
+}
+
+/* Front (Basic Info) */
+.agent-front {
+  position: absolute;
+  inset: 0;
+  backface-visibility: hidden;
+  background: #0d0d0d;
+  border-radius: 14px;
+  border: 2px solid #ff4655;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  box-shadow: 0 0 20px rgba(255, 70, 85, 0.4);
+}
+
+/* Back (Agent Role Description) */
+.agent-back {
+  position: absolute;
+  inset: 0;
+  backface-visibility: hidden;
+  transform: rotateY(180deg);
+  border-radius: 14px;
+  padding: 1rem;
+  background: linear-gradient(135deg, #1a0f12, #000);
+  border: 2px solid #ff4655;
+  color: #fff;
+  text-align: center;
+  box-shadow: 0 0 20px rgba(255, 70, 85, 0.5);
+}
+
+/* Hover */
+.agent:hover {
+  transform: scale(1.05);
+}
+/* Make all images same size including Valorant */
+.game-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+  display: block;
+}
+body {
+    margin: 0;
+    padding: 0;
+}
+
+main, .content, .game-section {
+    margin-top: 70px; /* adjust based on your header height */
+}
+.among-crew img,
+.role img,
+.goal img,
+.step img {
+    width: 100%;
+    max-width: 300px;       /* ✅ Prevent oversized image */
+    max-height: 220px;      /* ✅ Stops taking half page */
+    object-fit: contain;    /* ✅ Full image stays visible */
+    display: block;
+    margin: 0 auto;
+    border-radius: 10px;
+}
+/* 🎯 Valorant Agents Section */
+.val-hero {
+  text-align: center;
+  padding: 2rem 1rem;
+  background-color: #111; /* Optional: dark background for contrast */
+  color: white;
+}
+
+.val-hero .game-image {
+  width: 100%;
+  max-width: 600px; /* or whatever max width you want */
+  height: auto;
+  display: block;
+  margin: 1rem auto 0;
+  object-fit: contain;
+  border-radius: 10px; /* optional rounded corners */
+  box-shadow: 0 0 15px rgba(255, 70, 85, 0.7); /* optional subtle glow */
+}
+
+
+/* Container for agent cards */
+.agent-container {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+/* Each agent card box */
+.agent {
+  background: linear-gradient(145deg, #1a0000, #000);
+  border: 2px solid #ff4655;
+  border-radius: 12px;
+  width: 280px;
+  text-align: center;
+  box-shadow: 0 0 20px rgba(255, 70, 85, 0.3);
+  transition: transform 0.3s, box-shadow 0.3s;
+  overflow: hidden;
+  padding: 1rem;
+}
+
+.agent:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 0 25px rgba(255, 70, 85, 0.6);
+}
+
+/* Agent image styling */
+.agent img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+/* Agent text */
+.agent h3 {
+  color: #ff4655;
+  font-size: 1.3rem;
+  margin-bottom: 0.5rem;
+}
+
+.agent p {
+  color: #ccc;
+  font-size: 1rem;
+  line-height: 1.4;
+}
+
+/* 🎥 Dead by Daylight Video Banner */
+.video-banner {
+    position: relative;
+    height: 85vh;
+    overflow: hidden;
+}
+
+.dbd-video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform: translate(-50%, -50%);
+    opacity: 0.35; /* cinematic look */
+    z-index: 0;
+}
+
+.video-banner .dbd-hero-content {
+    position: relative;
+    z-index: 2;
+}
+
+.video-banner .game-image {
+    margin-top: 1.5rem;
+}
+
+/* 🌿 Minecraft Hero (Same Layout as DBD) */
+.minecraft-hero {
+  background: radial-gradient(circle at center, #003300, #000);
+  color: #fff;
+  text-align: center;
+  padding: 3rem 1rem;
+  position: relative;
+  height: 70vh;
+  overflow: hidden;
+}
+
+/* Video behind overlay */
+.minecraft-hero .mc-video {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Dark overlay like DBD */
+.minecraft-hero .overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.55);
+}
+
+/* Text (same as DBD hero) */
+.minecraft-hero .game-hero-content {
+  position: relative;
+  z-index: 2;
+  max-width: 700px;
+  margin: auto;
+}
+
+.minecraft-hero h1 {
+  font-size: 2rem;
+  color: #00ff6a;
+  text-shadow: 2px 2px 6px #000;
+}
+
+.minecraft-hero p {
+  max-width: 650px;
+  margin: 1rem auto;
+  line-height: 1.6;
+  opacity: 0.9;
+}
+
+.minecraft-hero .btn {
+  background: #00ff6a;
+  color: #000;
+  padding: 0.8rem 1.4rem;
+  border-radius: 8px;
+  font-weight: 600;
+  display: inline-block;
+  margin-top: 1rem;
+  transition: 0.3s;
+}
+
+.minecraft-hero .btn:hover {
+  background: #00cc55;
+  transform: scale(1.05);
+}
+
+/* 🎉 Fall Guys Video Hero — Matches DBD/Minecraft Layout */
+.fallguys-video-hero {
+  background: radial-gradient(circle at center, #ff66cc, #000);
+  color: #fff;
+  text-align: center;
+  padding: 3rem 1rem;
+  position: relative;
+  height: 70vh;
+  overflow: hidden;
+}
+
+/* Video */
+.fallguys-video-hero .fg-video {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Overlay */
+.fallguys-video-hero .overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.55);
+}
+
+/* Text */
+.fallguys-video-hero .game-hero-content {
+  position: relative;
+  z-index: 2;
+  max-width: 700px;
+  margin: auto;
+}
+
+.fallguys-video-hero h1 {
+  font-size: 2rem;
+  color: #ffcc00;
+  text-shadow: 2px 2px 6px #000;
+}
+
+.fallguys-video-hero p {
+  max-width: 650px;
+  margin: 1rem auto;
+  line-height: 1.6;
+  opacity: 0.9;
+}
+
+/* Button */
+.fallguys-video-hero .btn {
+  background: #ffcc00;
+  color: #000;
+  padding: 0.8rem 1.4rem;
+  border-radius: 8px;
+  font-weight: 600;
+  display: inline-block;
+  margin-top: 1rem;
+  transition: 0.3s;
+}
+
+.fallguys-video-hero .btn:hover {
+  background: #ffb300;
+  transform: scale(1.05);
+}
+
+/* 🚀 Among Us Video Hero — Matches DBD/Minecraft/FallGuys */
+.amongus-video-hero {
+  background: radial-gradient(circle at center, #250025, #000);
+  color: #fff;
+  text-align: center;
+  padding: 3rem 1rem;
+  position: relative;
+  height: 70vh;
+  overflow: hidden;
+}
+
+/* Video behind overlay */
+.amongus-video-hero .au-video {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Dim overlay */
+.amongus-video-hero .overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.55);
+}
+
+/* Text container */
+.amongus-video-hero .game-hero-content {
+  position: relative;
+  z-index: 2;
+  max-width: 700px;
+  margin: auto;
+}
+
+.amongus-video-hero h1 {
+  font-size: 2rem;
+  color: #ff4ae3;
+  text-shadow: 2px 2px 6px #000;
+}
+
+.amongus-video-hero p {
+  max-width: 650px;
+  margin: 1rem auto;
+  line-height: 1.6;
+  opacity: 0.9;
+}
+
+/* Button style */
+.amongus-video-hero .btn {
+  background: #ff4ae3;
+  color: #000;
+  padding: 0.8rem 1.4rem;
+  border-radius: 8px;
+  font-weight: 600;
+  display: inline-block;
+  margin-top: 1rem;
+  transition: 0.3s;
+}
+
+.amongus-video-hero .btn:hover {
+  background: #e000c0;
+  transform: scale(1.05);
+}

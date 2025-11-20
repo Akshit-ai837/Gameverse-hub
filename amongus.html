@@ -11,10 +11,9 @@
 
 <header class="site-header">
   <div class="container">
-    <a href="index.html" class="logo">
-      <img src="images/logo.jpg" alt="GameVerse Hub Logo" class="logo-img">
-      GameVerse Hub
-    </a>
+    
+    <!-- ✅ Logo also works as Home -->
+    <a href="index.html" class="logo">GameVerse Hub</a>
 
     <nav class="main-nav">
       <a href="index.html">Home</a>
@@ -22,7 +21,7 @@
       <a href="amongus.html">Among Us</a>
       <a href="deadbydaylight.html">Dead by Daylight</a>
       <a href="fallguys.html">Fall Guys</a>
-      <a href="minimilitia.html">Mini Militia</a>
+      <a href="valorant.html">Valorant</a>
       <a href="mini-game.html">Mini Game</a>
       <a href="contact.html">Contact</a>
     </nav>
@@ -35,14 +34,25 @@
 
 
 
+
+
   <main>
     <!-- Hero / Banner -->
-    <section class="game-hero amongus-hero">
-      <h1>Among Us: A Game of Deception</h1>
-      <p>Complete your tasks — or sabotage from the shadows. Who will you trust?</p>
-      <img src="images/amongus-crew.png" alt="Among Us Crew" class="game-image" />
-      <a href="https://www.innersloth.com/games/among-us" target="_blank" class="btn">Official Site</a>
-    </section>
+ <!-- 🚀 Among Us Video Hero -->
+<section class="game-hero amongus-video-hero">
+  <video autoplay muted loop playsinline class="au-video">
+    <source src="images/au-banner.mp4" type="video/mp4">
+  </video>
+
+  <div class="overlay"></div>
+
+  <div class="game-hero-content">
+    <h1>Among Us: Trust No One!</h1>
+    <p>Complete tasks, find the Impostor, and survive as chaos unfolds in space.</p>
+    <a href="https://innersloth.com/game/among-us/" target="_blank" class="btn">Official Site</a>
+  </div>
+</section>
+
 
     <!-- How to Play -->
     <section class="how-to-play">

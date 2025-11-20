@@ -8,12 +8,12 @@
 </head>
 <body>
   <!-- 🧭 HEADER -->
+<!-- 🧭 HEADER -->
 <header class="site-header">
   <div class="container">
-    <a href="index.html" class="logo">
-      <img src="images/logo.jpg" alt="GameVerse Hub Logo" class="logo-img">
-      GameVerse Hub
-    </a>
+    
+    <!-- ✅ Logo also works as Home -->
+    <a href="index.html" class="logo">GameVerse Hub</a>
 
     <nav class="main-nav">
       <a href="index.html">Home</a>
@@ -21,7 +21,7 @@
       <a href="amongus.html">Among Us</a>
       <a href="deadbydaylight.html">Dead by Daylight</a>
       <a href="fallguys.html">Fall Guys</a>
-      <a href="minimilitia.html">Mini Militia</a>
+      <a href="valorant.html">Valorant</a>
       <a href="mini-game.html">Mini Game</a>
       <a href="contact.html">Contact</a>
     </nav>
@@ -33,14 +33,26 @@
 </header>
 
 
+
+
   <main>
     <!-- 🧱 Hero Section -->
-    <section class="game-hero minecraft-hero">
-      <h1>Minecraft: Build Your World</h1>
-      <p>Explore, craft, survive, and create endless adventures in blocky worlds!</p>
-      <img src="images/minecraft-hero.png" alt="Minecraft Landscape" class="game-image" />
-      <a href="https://www.minecraft.net" target="_blank" class="btn">Official Site</a>
-    </section>
+<!-- 🌿 Minecraft Video Hero (Matches DBD Style) -->
+<section class="game-hero minecraft-hero">
+  <video autoplay muted loop playsinline class="mc-video">
+    <source src="images/mc-banner.mp4" type="video/mp4">
+  </video>
+
+  <div class="overlay"></div>
+
+  <div class="game-hero-content">
+    <h1>Minecraft: Build, Explore, Survive</h1>
+    <p>Enter a limitless world of creativity, adventure, and survival.</p>
+    <a href="https://minecraft.net" target="_blank" class="btn">Official Site</a>
+  </div>
+</section>
+
+
 
     <!-- 🎮 Gameplay Overview -->
     <section class="gameplay-overview">
